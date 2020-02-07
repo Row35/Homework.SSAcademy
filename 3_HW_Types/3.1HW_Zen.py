@@ -19,13 +19,13 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!"""
 #subtask1
-b=count('better',a)
-e=count('better',a)
-f=count('better',a)
-print("the word 'Better' was menteoined by {b} times")
-print("the word 'Better' was menteoined by {e} times")
-print("the word 'Better' was menteoined by {f} times")
+b=a.count('better')
+e=a.count('never')
+f=a.count('is')
+print(f"the word 'better' was menteoined {b} times")
+print(f"the word 'never' was menteoined {e} times")
+print(f"the word 'is' was menteoined {f} times.")
 #subtask2 
-print(a.upper())
+print("\n", a.upper())
 #subtask2
-print(a.replace(i &))
+print("\n", a.replace('i', '&'))
