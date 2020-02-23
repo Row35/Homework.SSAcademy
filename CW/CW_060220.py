@@ -1,4 +1,4 @@
-# 1 number comparison
+# 1 Порівняння 2-х чисел
 a=int(input("insert a = "))
 b=int(input("insert b = "))
 if a > b:

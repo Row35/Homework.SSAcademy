@@ -1,5 +1,5 @@
 # Посортувати цифри, що входять в дане число
-a=(input("insert 4-digit number = "))
+a=(input("enter 4-digit number = "))
 
 # #print multiply of digits
 z=(int(a)%10)*(int(a)//10%10)*(int(a)//10//10%10)*(int(a)//10//10//10%10)

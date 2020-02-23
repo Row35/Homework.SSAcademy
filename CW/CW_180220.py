@@ -6,12 +6,15 @@
 #  тоді друкує повідомлення привітання. 
 # (для виконання завдання необхідно імпортувати  модуль random, 
 # а з нього функцію randint())
+
 import random
+name=input("please, enter your name: ")
+user_num=int(input(f"Hi {name}. This the Number game. \n I choose the number, \n try to guess) \n write your suggestion = "))
 pc_num=random.randint(0, 100)
 while True:
-    user_num=int(input("please input the number = "))
+    user_num=int(input("Wrong! please enter next suggest number = "))
     if user_num==pc_num:
-        print ("You win!!!")
+        print (f"Congradulations {name}. You win!!!")
         break
     elif user_num<pc_num:
         print ("you need to write bigger number")

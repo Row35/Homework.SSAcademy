@@ -80,3 +80,10 @@
 #     print(area_triangle ())
 # elif area==2:
 #     print(area_rectangle ())
+
+
+while True:
+    for i in range(0, 5):
+        line = f"Loading{'.' * i: <12}"
+        print(line, end="\r")
+   
