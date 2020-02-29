@@ -10,15 +10,6 @@
 
 # 7.  Побудувати рекурсивну функцію обчислення чисел Фібоначі до числа введеного користувачем.
 
-# def fib(n):
-#     if n==0:
-#         print (n)
-#     if n==1:
-#         print (0, n)
-#     else:
-#         return fib(n-1)+fib(n-2)
-
-# print(fib(6))
 
 
 
@@ -26,9 +17,9 @@
 # 8.  Написати програму, яка обчислює дискримінант квадратного рівняння і обчислює його корені
 def Discriminant (a, b, c):
     D = (b**2)-4*a*c
-    if D >0:
+    if D <0:
         return "There is no roots of your equation"            
-    if D >0:
+    elif D >0:
         x1=(-b+(D)**(1/2))/(2*a)
         x2=(-b-(D)**(1/2))/(2*a) 
         return "The roots of your equation: x1 = "+str(round(x1,4))+", x2 = "+str(round(x2,4)
@@ -42,4 +33,5 @@ while a==0:
     continue
 b=float(input('Please enter the b coefficient: '))
 c=float(input('Please enter the c coefficient: '))
+
 print(Discriminant(a,b,c))
