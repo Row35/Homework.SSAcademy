@@ -81,9 +81,91 @@
 # elif area==2:
 #     print(area_rectangle ())
 
+# while True:
+#     for i in range(0, 5):
+#         line = f"Loading{'.' * i: <12}"
+#         print(line, end="\r")
 
-while True:
-    for i in range(0, 5):
-        line = f"Loading{'.' * i: <12}"
-        print(line, end="\r")
+
+# 5.  Написати функцію, яка обчислює суму цифр введеного числа.
+# def sum_of(number):
+#     sum = 0
+#     for i in number:
+#         sum += int(i)
+#     return "суму цифр введеного числа: "+str(sum)
+
+# num=input('Please enter the number: ')
+# print(sum_of(num))
+
+
+ 
+
+# 6.  Написати програму калькулятор, яка складається з наступних функцій: 
+# головної, яка пропонує вибрати дію та додаткових, які реалізовують вибрані дії, 
+# калькулятор працює доти, поки ми не виберемо дію вийти з калькулятора, після виходу, 
+# користувач отримує повідомлення з подякою за вибір нашого програмного продукту!!!
+# print("This is the simple calculator. Please choose your operation from list: \n1.Add; 2.Subtract; 3.Multiply; 4.Divide; \nQ.Quit")
+
+# def calc(num1, num2): 
+#     if choice == '1':
+#         return str(num1)+" + "+str(num2)+" = "+ str(num1+num2)
+#     elif choice == '2':
+#         return str(num1)+" - "+str(num2)+" = "+ str(num1-num2)
+#     elif choice == '3':
+#         return str(num1)+" * "+str(num2)+" = "+ str(num1*num2)
+#     elif choice == '4':
+#         return str(num1)+" / "+str(num2)+" = "+ str(num1//num2)
+
+# while True:
+#     choice = input("Enter choice(1/2/3/4) or q for quit: ")
+#     if choice=="q" or choice=="Q": 
+#         print("thank you for you choise, good bye!")
+#         break
+#     if choice in ("1", "2", "3", "4"):
+#         num1 = float(input("Enter first number: "))
+#         num2 = float(input("Enter second number: "))
+#         print (calc(num1, num2))
+#         continue
+#     else:
+#         print("Wrong input!")
+#         continue 
+
+
+
+# 7.  Побудувати рекурсивну функцію обчислення чисел Фібоначі до числа введеного користувачем.
+        
+# fib=int(input("insert last n in Fib series = "))
+# x, y = 0, 1
+# print('Fibo series = 0, ', end= '')
+# while y<fib:
+#     print(y, end=', ')
+#     x,y = y,x+y
+
+
+
+# 8.  Написати програму, яка обчислює дискримінант квадратного рівняння і обчислює його корені
+# def Discriminant (a, b, c):
+#     D = (b**2)-4*a*c
+#     if D<0:
+#         return "There is no roots of your equation"            
+#     if D==0:
+#         x1=-b/(2*a)
+#         return f"The x={round(x1,4)} root of your equation"
+#     else:
+#         x1=(-b+(D)**(1/2))/(2*a)
+#         x2=(-b-(D)**(1/2))/(2*a) 
+#         return f"The roots of your equation: x1={round(x1,4)}, x2={round(x2,4)}"
+         
+# a=float(input('Hi, I can solve your Quadratic equation of view: a*x^2+b*x+c \nPlease enter the a coefficient of Quadratic equation: '))
+# while a==0:
+#     print('\nThis equation isn\'t Quadratic!!!')
+#     a=float(input('Please enter the a coefficient of Quadratic equation\n(a must not be 0): '))
+#     continue
+# b=float(input('Please enter the b coefficient: '))
+# c=float(input('Please enter the c coefficient: '))
+
+# print(Discriminant(a,b,c))
+
+
+    
    
